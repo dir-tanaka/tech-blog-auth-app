@@ -1,8 +1,8 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the
 // README at: https://github.com/devcontainers/templates/tree/main/src/python
 {
-	"name": "app-auth DevContainer",
+	"name": "tech-blog-auth-app DevContainer",
   "dockerComposeFile": "../../docker-compose.yaml",
-	"service": "auth_app", 
+	"service": "tech-blog-auth-app", 
 	"workspaceFolder": "/app"
 }
