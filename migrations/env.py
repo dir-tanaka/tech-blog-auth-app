@@ -24,7 +24,7 @@ if config.config_file_name is not None:
 # 例: from app.database import Base
 # target_metadata = Base.metadata
 # 正しいパスと変数名に置き換えてください
-from app.db.database import Base # 仮定: あなたのBaseオブジェクトが app/database.py にある場合
+from app.infrastructure.core import Base # 仮定: あなたのBaseオブジェクトが app/database.py にある場合
 target_metadata = Base.metadata # <-- 修正: あなたのBase.metadata を設定
 
 

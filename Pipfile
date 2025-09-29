@@ -29,6 +29,8 @@ asyncpg = "*"
 psycopg2-binary = "*"
 greenlet = "*"
 alembic = "*"
+python-jose = "*"
+passlib = "*"
 
 [dev-packages]
 

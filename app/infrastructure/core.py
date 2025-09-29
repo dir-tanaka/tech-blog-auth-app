@@ -11,7 +11,6 @@ SQLALCHEMY_DATABASE_URL = f"postgresql+asyncpg://postgres:password@postgresql:54
 engine = create_async_engine(SQLALCHEMY_DATABASE_URL, echo=True)
 
 # セッションファクトリの作成
-# expire_on_commit=False にすることで、コミット後にオブジェクトがデタッチされません
 AsyncSessionLocal = sessionmaker(
     autocommit=False,
     autoflush=False,
