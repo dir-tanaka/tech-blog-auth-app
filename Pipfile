@@ -31,6 +31,7 @@ greenlet = "*"
 alembic = "*"
 python-jose = "*"
 passlib = "*"
+pyjwt = "*"
 
 [dev-packages]
 

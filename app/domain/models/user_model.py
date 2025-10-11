@@ -1,16 +1,25 @@
+from datetime import datetime
 from typing import List, Union
 from pydantic import BaseModel
 
 class User(BaseModel):
   id: int
-  name: str
-  description: str
+  email: str
+  password_hash: str
+  salt: str
+  created_at: datetime
+  updated_at: datetime
 
 class GetUser(BaseModel):
-  id: int
-  name: str
+  email: str
+  password_hash: str
+  salt: str
+
+class RequestUser(BaseModel):
+  email: str
+  password: str
 
 class CreateUser(BaseModel):
-  name: str
-  description: str
-
+  email: str
+  password_hash: str
+  salt: str
