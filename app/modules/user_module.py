@@ -22,6 +22,6 @@ async def create_user(user: RequestUser, db_session: AsyncSession = Depends(get_
 @router.post("/login")
 async def login_user(user: RequestUser, db_session: AsyncSession = Depends(get_db)):
   # ここでdbセッションをcreate_userに渡す
-  result: dict = await login_user_service(db_session, user)
+  token: dict = await login_user_service(db_session, user)
   # レスポンスbody
-  return {"res": "ok", "status": result}
+  return {"res": "ok", "token": token}
